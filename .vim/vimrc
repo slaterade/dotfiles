@@ -1,8 +1,7 @@
-" provide filetype-specific indenting, syntax highlighting, omni-completion
+set nocompatible
 filetype plugin indent on
 syntax on
 
-colorscheme desert
 runtime macros/matchit.vim     " Hit '%' on 'if' to jump to 'else'.
 set autoindent                 " minimal automatic indent for any filetype
 set backspace=indent,eol,start " proper backspace behavior
@@ -13,3 +12,10 @@ set wildmenu                   " command line completion with TAB
 set tabstop=4                  " width of TAB (\t) is now 4
 set shiftwidth=4               " indents will now have a width of 4
 set expandtab                  " on pressing TAB, insert 4 spaces
+set nrformats-=octal           " treat leading zero as decimal not octal
+
+if filereadable("~/.vim/colors/desertfox.vim")
+    colorscheme desertfox
+else
+    colorscheme desert
+endif
