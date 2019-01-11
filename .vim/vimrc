@@ -13,9 +13,8 @@ set tabstop=4                  " width of TAB (\t) is now 4
 set shiftwidth=4               " indents will now have a width of 4
 set expandtab                  " on pressing TAB, insert 4 spaces
 set nrformats-=octal           " treat leading zero as decimal not octal
+set number                     " always display line numbers
 
-if filereadable("~/.vim/colors/desertfox.vim")
-    colorscheme desertfox
-else
-    colorscheme desert
-endif
+colorscheme desert
+!silent colorscheme desertfox
+
