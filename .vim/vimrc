@@ -9,11 +9,13 @@ set hidden                     " possible to have more than one unsaved buffer
 set incsearch                  " incremental search
 set ruler                      " shows current line number at bottom right
 set wildmenu                   " command line completion with TAB
+set wildmode=full              " complete the next full match
 set tabstop=4                  " width of TAB (\t) is now 4
 set shiftwidth=4               " indents will now have a width of 4
 set expandtab                  " on pressing TAB, insert 4 spaces
 set nrformats-=octal           " treat leading zero as decimal not octal
 set number                     " always display line numbers
+set history=200                " increase command line history
 
 colorscheme desert
 !silent colorscheme desertfox
