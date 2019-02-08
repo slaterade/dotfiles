@@ -18,5 +18,10 @@ set number                     " always display line numbers
 set history=200                " increase command line history
 
 colorscheme desert
-!silent colorscheme desertfox
+silent! colorscheme desertfox
+
+noremap <silent> [b :bprevious<CR>
+noremap <silent> ]b :bnext<CR>
+noremap <silent> [B :bfirst<CR>
+noremap <silent> ]B :blast<CR>
 
